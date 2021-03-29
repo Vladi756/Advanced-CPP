@@ -14,8 +14,8 @@ int main() {
 	}
 
 	std::vector<std::string> names;
-	names.push_back("Vladi");
-	names.push_back("Thomas");
+	names.push_back("Naomi");
+	names.push_back("Mark");
 
 	for(std::string name : names){
 		file << name << std::endl;
