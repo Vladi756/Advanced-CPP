@@ -11,7 +11,7 @@ void print_vector(std::vector<int> vector){       // Simple function to output a
     }
 }
 
-int playgame(){
+int playgame(){					  // Simple guessing game
     std::vector<int> guesses;
     int count = 0;
 
@@ -34,14 +34,14 @@ int playgame(){
         }
     }
 
-	std::ifstream input("best_score.txt");
+	std::ifstream input("best_score.txt");		// best_score.txt exists on my PC, you need to create a file if you want this to work
 	if(!input.is_open()){
 		std::cout << "Unable to read file!" << std::endl;
 	}
 	
 
 	int best_score;
-	input >> best_score;
+	input >> best_score;		// Reads the current high score from the file.
 
 	std::ofstream output("best_score.txt");
 	if(!output.is_open()){
@@ -49,18 +49,18 @@ int playgame(){
 	}
 
 	if(count < best_score) {
-	    output << count;
+	    output << count;		// Writes your current score if it is less than the best score (less guesses = better score)
 	} else {
-	    output << best_score;
+	    output << best_score;	// Otherwise, leaves the score as it is.
 	}
 
-    print_vector(guesses);  // Displays all of the guesses made.
+    print_vector(guesses);  		// Displays all of the guesses made.
     return 0;
 }
 
 int main() {
 
-    srand(time(NULL));          // seeds random number
+    srand(time(NULL));          	// seeds random number
     int choice;
 
     do {
