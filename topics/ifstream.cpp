@@ -4,8 +4,8 @@
 
 int main() {
 
-std::ifstream file("Test.text"); 			// If writing to files = file is created if it does not exist
-				       			// If reading from files (i.e this program) = file cannot be created - it must already exist
+	std::ifstream file("Test.text"); 			// If writing to files = file is created if it does not exist
+				       				// If reading from files (i.e this program) = file cannot be created - it must already exist
 
 	std::vector<std::string> names;
 
@@ -20,7 +20,7 @@ std::ifstream file("Test.text"); 			// If writing to files = file is created if 
 		std::cout << name << std::endl;
 	}
 
-
+	file.close();
 	return 0;
 }
 
