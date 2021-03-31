@@ -1,0 +1,5 @@
+Multifile compilation usually isn't such a hard problem in other programming languages, but in C++, it is quite complicated. 
+
+In this folder you will find 3 files - the main file (which calls the functions written), the util.cpp file (which contains the function definitions) and finally, the util.h file (a header file which contains the function declaratoins). Pay special attention to how this header file is included in the other two files, since it is a user created header file it is enclosed in quotation marks "", rather than karats <>.
+
+Multilfile compilation must be understood by anyone who wants to take C++, and programming in general seriously. It is useful for when large programs are being developed - so large, that putting all the code behind the program in one file wouldn't make sense as it would be very overwhelming and hard to understand.
