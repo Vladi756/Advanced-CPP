@@ -1,7 +1,7 @@
 #include <iostream>
 
 struct User {
-    std::string firstName;  // By default, all these members are public;
+    std::string firstName;  // By default, all these members are public; In a class, they would be default be private.
     std::string lastName;
     std::string ranking;
 };
