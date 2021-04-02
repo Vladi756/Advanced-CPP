@@ -26,16 +26,17 @@ int main(){
     user3.firstName = "Amy";
     user3.lastName = "Smith";
 
-    std::vector<User> users;
+    std::vector<User> users;    // Vector of type User.
 
     users.push_back(user1);
     users.push_back(user2);
-    users.push_back(user3);
+    users.push_back(user3);     // Adding all the users to the vector.
 
-    for(int i = 0; i < users.size(); i++){
+    for(int i = 0; i < users.size(); i++){                  // Outputing all the users information.
         std::cout << users[i].firstName << std::endl;
         std::cout << users[i].lastName << std::endl;
-    }
+    }   
+    
     return 0;
 }
 
