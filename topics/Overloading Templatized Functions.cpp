@@ -71,7 +71,8 @@ int main(){
 
 
 /*
-    Function templatization is a good way to minimze overloading.
-    This is in turn beneficial as it could potentiall save lots of lines
-    of code, because functions would not need to be repeated.
+    By utilizing both the concepts of function overloading, and function templatization, we are able to create one swap function with enormous capabilties. 
+    The function templatizations makes it so one swap function can deal with any type (int, float, double, etc.) and by overloading that function with another
+    swap function that has a different method signature (i.e. different number of parameters) the swap function's capability has increased in that it can also 
+    swap out full arrays. Very cool stuff.
 */
