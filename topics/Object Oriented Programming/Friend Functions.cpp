@@ -21,7 +21,6 @@ int main(){
     User user, user1;
     user.firstName = "Naomi";
     user.lastName = "Bell";
-    user.setRank("Gold");
 
     outputStatus(user); // Not a part of the User class, so no need to prefix with User.outputStatus();
 
