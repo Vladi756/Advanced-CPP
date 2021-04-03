@@ -17,7 +17,7 @@ class User {
             this->ranking = ranking;
         }
         ~User(){
-            std::cout << "Destructor" << std::endl;
+            std::cout << "Destructor" << std::endl; // Outputs "Destructors" when user objects are destroyed (done automatically)
         }
 };
 
