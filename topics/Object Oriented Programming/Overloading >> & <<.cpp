@@ -22,11 +22,13 @@ class User {
             std::cout << "Destructor" << std::endl;
         }
 };
+
 // Overloading the << operator
 std::ostream& operator << (std::ostream& output, User user) {
     output << "First Name:" << user.firstName << "\nLast Name: " << user.lastName << "\nRank: " << user.getRank() << std::endl;
     return output;
 }
+
 // Overlading the >> operator.
 std::istream& operator >> (std::istream &input, User &user) {
     input >> user.firstName >> user.lastName;
