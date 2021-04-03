@@ -3,6 +3,7 @@
 int main(){
 
     int grades[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    
     // Size can be inffered by compiler with single D arrays.
     // With multidimensional arrays, you need to specify explicitely.
     // 3 arrays, 3 items per array so - [3][3]
