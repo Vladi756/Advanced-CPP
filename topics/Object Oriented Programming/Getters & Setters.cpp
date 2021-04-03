@@ -11,7 +11,7 @@ class User {
             return ranking;
         }
         void setRank(std::string ranking){  // Setter Function
-            if(ranking == "Bronze" || ranking == "Silver" || ranking == "Gold"){
+            if(ranking == "Bronze" || ranking == "Silver" || ranking == "Gold"){    // Make sure we use a proper rank
                 this->ranking = ranking;
             } else {
                 this->ranking = "N/A";
@@ -31,7 +31,7 @@ class User {
 int main(){
 
     User user("Adam", "Smith", "Gold");
-    User userz("Amy", "Johnson", "Diamond");    // Instantiating two objects of User class through custom constructor.
+    User userz("Amy", "Johnson", "Silver");    // Instantiating two objects of User class through custom constructor.
 
     std::cout << user.firstName << std::endl;
     std::cout << user.lastName << std::endl;
@@ -42,7 +42,7 @@ int main(){
     std::cout << userz.getRank() << std::endl;
 
     userz.setRank("Bronze");
-    user.setRank("Platinum");
+    user.setRank("Platinum");       // Outputs N/A
 
     std::cout << userz.getRank() << std::endl;
     std::cout << user.getRank() << std::endl;
