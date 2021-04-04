@@ -12,4 +12,5 @@ class Teacher : public User {
         std::vector<std::string> classes;
         void output();
 };
+
 #endif
